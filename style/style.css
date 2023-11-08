@@ -18,7 +18,7 @@ input {
     width: 150px;
     height: 30px;
     border-radius:5px;
-    padding: 5px;
+    padding: 15px;
     border: none;
 }
 .container {
@@ -52,7 +52,7 @@ td {
 }
 table {
     margin: 0 auto;
-    width: 800px;
+    max-width: 800px;
     height: auto;
     background-color: aquamarine;
     padding: 20px;
@@ -66,3 +66,66 @@ td {
     width: 30%;
     padding: 10px;
 }
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:row;
+  }
+@media screen and (max-width: 600px) {
+    form {
+      max-width: 400px;
+      padding: 5px;
+      border-width: 20px;
+    }
+    
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    table {
+      max-width: 400px;
+      padding: 10px;
+    }
+    
+    td {
+      width: 100%;
+      padding: 5px;
+    }
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:row;
+  }
+  @media screen and (max-width: 350px) {
+    form {
+      max-width: 300px;
+      padding: 5px;
+      border-width: 10px;
+    }
+    
+    input {
+      width: 100%;
+      margin-bottom: 15px;
+    
+    }
+    
+    table {
+      max-width: 300px;
+      padding: 5px;
+    }
+    
+    td {
+      width: 100%;
+      padding: 3px;
+    }
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }

@@ -7,7 +7,7 @@ table.className = "myTable";
 document.body.appendChild(table);
 
 function list() {
-    table.innerHTML = ""; 
+    table.innerHTML = ""; // Yangi qatorlarni qo'shishdan oldin jadvalni tozalash
     let users = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
     for (let i = 0; i < users.length; i++) {
         let row = table.insertRow(i);
@@ -16,11 +16,6 @@ function list() {
             cell.innerHTML = users[i][j];
         }
     }
-}
-
-function clearData() {
-    localStorage.removeItem('users');
-    list();
 }
 
 btn.addEventListener('click', function () {
@@ -32,7 +27,3 @@ btn.addEventListener('click', function () {
         list();
     }
 });
-
-window.onload = function() {
-    list();
-};
