@@ -52,10 +52,17 @@ td {
 }
 table {
     margin: 0 auto;
-    max-width: 800px;
+    width: 800px;
     height: auto;
     background-color: aquamarine;
+    padding: 20px;
+}
+tr {
     display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: space-between;
+}
+td {
+    width: 30%;
+    padding: 10px;
 }
