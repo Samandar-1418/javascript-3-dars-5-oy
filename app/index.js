@@ -37,3 +37,4 @@ window.onload = function() {
     list();
     console.log("salom");
 };
+console.log("salom");
