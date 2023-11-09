@@ -63,7 +63,7 @@ tr {
     justify-content: space-between;
 }
 td {
-    width: 30%;
+    /* width: 30%; */
     padding: 10px;
 }
 .user {
@@ -90,7 +90,7 @@ td {
     }
     
     td {
-      width: 100%;
+      /* width: 100%; */
       padding: 5px;
     }
   }
@@ -128,4 +128,26 @@ td {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+  }
+  @media screen and (min-width: 1440px) {
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    table {
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    table {
+      width: auto;
+    }
   }

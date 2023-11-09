@@ -30,6 +30,8 @@ btn.addEventListener('click', function () {
         users.push(newUser);
         localStorage.setItem('users', JSON.stringify(users));
         list();
+    } else {
+        alert ('Toliq kiriting');
     }
 });
 
